@@ -18,227 +18,16 @@
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "9639004d-2e42-47cd-8742-ea90205ac635"
+				"spark.autotune.trackingId": "26e3d320-c3f1-4828-91be-7d38c1fbbe3e"
 			}
 		},
 		"metadata": {
 			"saveOutput": true,
-			"synapse_widget": {
-				"version": "0.1",
-				"state": {
-					"399e5d6c-131b-4333-9b4d-7fe73aba8ad0": {
-						"type": "Synapse.DataFrame",
-						"sync_state": {
-							"table": {
-								"rows": [
-									{
-										"0": "0",
-										"1": "1",
-										"2": "39.0",
-										"3": "male",
-										"4": "23.2",
-										"5": "91",
-										"6": "Yes",
-										"7": "0",
-										"8": "No",
-										"9": "southeast",
-										"10": "1121.87"
-									},
-									{
-										"0": "1",
-										"1": "2",
-										"2": "24.0",
-										"3": "male",
-										"4": "30.1",
-										"5": "87",
-										"6": "No",
-										"7": "0",
-										"8": "No",
-										"9": "southeast",
-										"10": "1131.51"
-									},
-									{
-										"0": "2",
-										"1": "3",
-										"3": "male",
-										"4": "33.3",
-										"5": "82",
-										"6": "Yes",
-										"7": "0",
-										"8": "No",
-										"9": "southeast",
-										"10": "1135.94"
-									},
-									{
-										"0": "3",
-										"1": "4",
-										"3": "male",
-										"4": "33.7",
-										"5": "80",
-										"6": "No",
-										"7": "0",
-										"8": "No",
-										"9": "northwest",
-										"10": "1136.4"
-									},
-									{
-										"0": "4",
-										"1": "5",
-										"3": "male",
-										"4": "34.1",
-										"5": "100",
-										"6": "No",
-										"7": "0",
-										"8": "No",
-										"9": "northwest",
-										"10": "1137.01"
-									},
-									{
-										"0": "5",
-										"1": "6",
-										"3": "male",
-										"4": "34.4",
-										"5": "96",
-										"6": "Yes",
-										"7": "0",
-										"8": "No",
-										"9": "northwest",
-										"10": "1137.47"
-									},
-									{
-										"0": "6",
-										"1": "7",
-										"3": "male",
-										"4": "37.3",
-										"5": "86",
-										"6": "Yes",
-										"7": "0",
-										"8": "No",
-										"9": "northwest",
-										"10": "1141.45"
-									},
-									{
-										"0": "7",
-										"1": "8",
-										"2": "19.0",
-										"3": "male",
-										"4": "41.1",
-										"5": "100",
-										"6": "No",
-										"7": "0",
-										"8": "No",
-										"9": "northwest",
-										"10": "1146.8"
-									},
-									{
-										"0": "8",
-										"1": "9",
-										"2": "20.0",
-										"3": "male",
-										"4": "43.0",
-										"5": "86",
-										"6": "No",
-										"7": "0",
-										"8": "No",
-										"9": "northwest",
-										"10": "1149.4"
-									},
-									{
-										"0": "9",
-										"1": "10",
-										"2": "30.0",
-										"3": "male",
-										"4": "53.1",
-										"5": "97",
-										"6": "No",
-										"7": "0",
-										"8": "No",
-										"9": "northwest",
-										"10": "1163.46"
-									}
-								],
-								"schema": [
-									{
-										"key": "0",
-										"name": "index",
-										"type": "string"
-									},
-									{
-										"key": "1",
-										"name": "PatientID",
-										"type": "string"
-									},
-									{
-										"key": "2",
-										"name": "age",
-										"type": "string"
-									},
-									{
-										"key": "3",
-										"name": "gender",
-										"type": "string"
-									},
-									{
-										"key": "4",
-										"name": "bmi",
-										"type": "string"
-									},
-									{
-										"key": "5",
-										"name": "bloodpressure",
-										"type": "string"
-									},
-									{
-										"key": "6",
-										"name": "diabetic",
-										"type": "string"
-									},
-									{
-										"key": "7",
-										"name": "children",
-										"type": "string"
-									},
-									{
-										"key": "8",
-										"name": "smoker",
-										"type": "string"
-									},
-									{
-										"key": "9",
-										"name": "region",
-										"type": "string"
-									},
-									{
-										"key": "10",
-										"name": "claim",
-										"type": "string"
-									}
-								],
-								"truncated": false
-							},
-							"isSummary": false,
-							"language": "scala"
-						},
-						"persist_state": {
-							"view": {
-								"type": "details",
-								"chartOptions": {
-									"chartType": "bar",
-									"aggregationType": "count",
-									"categoryFieldKeys": [
-										"0"
-									],
-									"seriesFieldKeys": [
-										"0"
-									],
-									"isStacked": false
-								}
-							}
-						}
-					}
-				}
-			},
 			"enableDebugMode": false,
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "Synapse PySpark"
+			},
 			"language_info": {
 				"name": "python"
 			},
@@ -249,14 +38,13 @@
 				"endpoint": "https://project01erick.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/project01Spark",
 				"auth": {
 					"type": "AAD",
-					"authResource": "https://dev.azuresynapse.net",
-					"authHeader": null
+					"authResource": "https://dev.azuresynapse.net"
 				},
 				"sparkVersion": "3.3",
 				"nodeCount": 10,
 				"cores": 4,
 				"memory": 28,
-				"extraHeader": null
+				"automaticScaleJobs": false
 			},
 			"sessionKeepAliveTimeout": 30
 		},
