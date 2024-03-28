@@ -1,0 +1,17 @@
+{
+	"name": "external table",
+	"properties": {
+		"content": {
+			"query": "CREATE EXTERNAL TABLE product_sales_total\n\tWITH(\n\t\tLOCATION = '/container01/files/CityList.csv',\n\t\tDATA_SOURCE = salesdata_es,\n\t\tFILE_FORMAT = my_format\n\t)\nas \nselect *\nfrom \nOPENROWSET(BULK 'https://dls01project.dfs.core.windows.net/container01/files/CityList.csv',\n                FORMAT = 'csv',\n\t\t\t\tPARSER_VERSION = '2.0',\n\t\t\t\tHEADER_ROW = TRUE\n\t\t\t\t) as nueva_tabla\n; \n\n\nselect * from  product_sales_total;",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "sales",
+				"poolName": "Built-in"
+			},
+			"resultLimit": -1
+		},
+		"type": "SqlQuery"
+	}
+}

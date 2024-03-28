@@ -1,0 +1,25 @@
+{
+	"name": "new_db_data_lake",
+	"properties": {
+		"Name": "new_db_data_lake",
+		"EntityType": "DATABASE",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"IsSyMSCDMDatabase": true
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://container01@dls01project.dfs.core.windows.net/",
+			"Properties": {
+				"FormatType": "csv",
+				"LinkedServiceName": "project01erick-WorkspaceDefaultStorage"
+			}
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 1,
+		"ObjectId": "a10e6583-e2b7-4f46-af7e-88bc72e36cb1"
+	},
+	"type": "DATABASE"
+}

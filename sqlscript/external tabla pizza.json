@@ -1,0 +1,17 @@
+{
+	"name": "external tabla pizza",
+	"properties": {
+		"content": {
+			"query": "create SCHEMA STO AUTHORIZATION dbo\ngo;\n\ncreate master key ENCRYPTION by PASSWORD = '1999_Magodeoz'\nCREATE DATABASE SCOPED CREDENTIAL SynapseUserIdentity07 \nwith IDENTITY='sqladminuser'\n\ndrop CREDENTIAL SynapseUserIdentity0 \n\nCREATE DATABASE SCOPED CREDENTIAL SynapseUserIdentity04 \nWITH IDENTITY='SHARED ACCESS SIGNATURE',  \nSECRET = 'QY3RYeSp2Hiz5+3hfaA5Y2NMBBHTp1QAmjPiMT2m2Hd3tlHWaaSdhz7xm/8QEQ1zLCiMhgRt3s7t+AStFx9kFA==';\n\n\n\n\n--CREATE EXTERNAL TABLE STO.DimOrderDetails \nCREATE EXTERNAL TABLE STO.Prueba\nwith (\n    LOCATION ='/external_table/',\n    DATA_SOURCE = EDS_pizza,\n    file_format = EFF_pizza\n) AS\nselect * \nfrom  OPENROWSET (\nBULK 'abfss://container02@dls01project.dfs.core.windows.net/pizzas/order_details.csv',\n--data_source = 'EDS_pizza',\nFORMAT = 'csv',\nPARSER_VERSION = '2.0',\nHEADER_ROW = TRUE\n) as ext;\nGO",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "pizza_db",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

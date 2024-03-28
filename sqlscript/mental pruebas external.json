@@ -1,0 +1,17 @@
+{
+	"name": "mental pruebas external",
+	"properties": {
+		"content": {
+			"query": "-- This is auto-generated code\nSELECT\n    age,\n    count(age) as total\nFROM\n    OPENROWSET(\n        BULK 'https://dls01project.dfs.core.windows.net/container04/mental_health_data/mental_health.csv',\n        FORMAT = 'CSV',\n        PARSER_VERSION = '2.0',\n        HEADER_ROW = TRUE\n    ) AS [result]\nGROUP by Age \norder by total desc;\n\n\n-- This is auto-generated code\nSELECT\n        *\nFROM\n    OPENROWSET(\n        BULK 'https://dls01project.dfs.core.windows.net/container04/mental_health_data/mental_health.csv',\n        FORMAT = 'CSV',\n        PARSER_VERSION = '2.0',\n        HEADER_ROW = TRUE\n    ) AS [result];",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "mental_health_db",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

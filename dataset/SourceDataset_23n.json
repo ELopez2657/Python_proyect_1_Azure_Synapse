@@ -1,0 +1,28 @@
+{
+	"name": "SourceDataset_23n",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "prueba_final",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "/download?datasetVersionNumber=1"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": null
+		},
+		"schema": [
+			{
+				"name": "<head>",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

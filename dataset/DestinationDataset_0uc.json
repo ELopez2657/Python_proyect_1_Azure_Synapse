@@ -1,0 +1,23 @@
+{
+	"name": "DestinationDataset_0uc",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "project01erick-WorkspaceDefaultStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "prueba02",
+				"folderPath": "external_table",
+				"fileSystem": "container02"
+			},
+			"compression": {
+				"type": "GZip"
+			}
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

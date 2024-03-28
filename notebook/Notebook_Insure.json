@@ -1,0 +1,1240 @@
+{
+	"name": "Notebook_Insure",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "project01Spark",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 2,
+			"runAsWorkspaceSystemIdentity": false,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2",
+				"spark.autotune.trackingId": "9639004d-2e42-47cd-8742-ea90205ac635"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1",
+				"state": {
+					"399e5d6c-131b-4333-9b4d-7fe73aba8ad0": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "0",
+										"1": "1",
+										"2": "39.0",
+										"3": "male",
+										"4": "23.2",
+										"5": "91",
+										"6": "Yes",
+										"7": "0",
+										"8": "No",
+										"9": "southeast",
+										"10": "1121.87"
+									},
+									{
+										"0": "1",
+										"1": "2",
+										"2": "24.0",
+										"3": "male",
+										"4": "30.1",
+										"5": "87",
+										"6": "No",
+										"7": "0",
+										"8": "No",
+										"9": "southeast",
+										"10": "1131.51"
+									},
+									{
+										"0": "2",
+										"1": "3",
+										"3": "male",
+										"4": "33.3",
+										"5": "82",
+										"6": "Yes",
+										"7": "0",
+										"8": "No",
+										"9": "southeast",
+										"10": "1135.94"
+									},
+									{
+										"0": "3",
+										"1": "4",
+										"3": "male",
+										"4": "33.7",
+										"5": "80",
+										"6": "No",
+										"7": "0",
+										"8": "No",
+										"9": "northwest",
+										"10": "1136.4"
+									},
+									{
+										"0": "4",
+										"1": "5",
+										"3": "male",
+										"4": "34.1",
+										"5": "100",
+										"6": "No",
+										"7": "0",
+										"8": "No",
+										"9": "northwest",
+										"10": "1137.01"
+									},
+									{
+										"0": "5",
+										"1": "6",
+										"3": "male",
+										"4": "34.4",
+										"5": "96",
+										"6": "Yes",
+										"7": "0",
+										"8": "No",
+										"9": "northwest",
+										"10": "1137.47"
+									},
+									{
+										"0": "6",
+										"1": "7",
+										"3": "male",
+										"4": "37.3",
+										"5": "86",
+										"6": "Yes",
+										"7": "0",
+										"8": "No",
+										"9": "northwest",
+										"10": "1141.45"
+									},
+									{
+										"0": "7",
+										"1": "8",
+										"2": "19.0",
+										"3": "male",
+										"4": "41.1",
+										"5": "100",
+										"6": "No",
+										"7": "0",
+										"8": "No",
+										"9": "northwest",
+										"10": "1146.8"
+									},
+									{
+										"0": "8",
+										"1": "9",
+										"2": "20.0",
+										"3": "male",
+										"4": "43.0",
+										"5": "86",
+										"6": "No",
+										"7": "0",
+										"8": "No",
+										"9": "northwest",
+										"10": "1149.4"
+									},
+									{
+										"0": "9",
+										"1": "10",
+										"2": "30.0",
+										"3": "male",
+										"4": "53.1",
+										"5": "97",
+										"6": "No",
+										"7": "0",
+										"8": "No",
+										"9": "northwest",
+										"10": "1163.46"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "index",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "PatientID",
+										"type": "string"
+									},
+									{
+										"key": "2",
+										"name": "age",
+										"type": "string"
+									},
+									{
+										"key": "3",
+										"name": "gender",
+										"type": "string"
+									},
+									{
+										"key": "4",
+										"name": "bmi",
+										"type": "string"
+									},
+									{
+										"key": "5",
+										"name": "bloodpressure",
+										"type": "string"
+									},
+									{
+										"key": "6",
+										"name": "diabetic",
+										"type": "string"
+									},
+									{
+										"key": "7",
+										"name": "children",
+										"type": "string"
+									},
+									{
+										"key": "8",
+										"name": "smoker",
+										"type": "string"
+									},
+									{
+										"key": "9",
+										"name": "region",
+										"type": "string"
+									},
+									{
+										"key": "10",
+										"name": "claim",
+										"type": "string"
+									}
+								],
+								"truncated": false
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "count",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"0"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					}
+				}
+			},
+			"enableDebugMode": false,
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/d62abf11-8ec7-4b7d-bb7d-228c0c4762b4/resourceGroups/Project01/providers/Microsoft.Synapse/workspaces/project01erick/bigDataPools/project01Spark",
+				"name": "project01Spark",
+				"type": "Spark",
+				"endpoint": "https://project01erick.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/project01Spark",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net",
+					"authHeader": null
+				},
+				"sparkVersion": "3.3",
+				"nodeCount": 10,
+				"cores": 4,
+				"memory": 28,
+				"extraHeader": null
+			},
+			"sessionKeepAliveTimeout": 30
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"import pandas as pd\r\n",
+					"import matplotlib.pyplot as plt\r\n",
+					"import seaborn as sns"
+				],
+				"execution_count": 40
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"#### **Data Load**"
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"microsoft": {
+						"language": "python"
+					},
+					"collapsed": false
+				},
+				"source": [
+					"%%pyspark\r\n",
+					"df = spark.read.load('abfss://container03@dls01project.dfs.core.windows.net/insurance_data/insurance.csv', format='csv', header=True)\r\n",
+					"## If header exists uncomment line below \r\n",
+					"display(df.limit(10))"
+				],
+				"execution_count": 41
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"microsoft": {
+						"language": "python"
+					}
+				},
+				"source": [
+					"%%pyspark\r\n",
+					"df = spark.read.load('abfss://container03@dls01project.dfs.core.windows.net/insurance_data/insurance.csv', format='csv', header=True)\r\n",
+					"## If header exists uncomment line below\r\n",
+					"\r\n",
+					"df.write.mode(\"overwrite\").saveAsTable(\"default.InsuranceSpark\")"
+				],
+				"execution_count": 42
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"df_pd = df.toPandas()\r\n",
+					"df_pd"
+				],
+				"execution_count": 43
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"#### **Data Cleaning**"
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"df_pd.info()"
+				],
+				"execution_count": 44
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"df_pd.isnull().sum()"
+				],
+				"execution_count": 45
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"df_pd = df_pd.drop(columns='index',axis=1)\r\n",
+					"df_pd"
+				],
+				"execution_count": 46
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"df_pd.dropna(inplace=True)\r\n",
+					"df_pd"
+				],
+				"execution_count": 47
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"df_pd.duplicated().sum()"
+				],
+				"execution_count": 48
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"df_pd = df_pd.set_index('PatientID')\r\n",
+					"df_pd\r\n",
+					"# print(df_pd.set_index('PatientID'))"
+				],
+				"execution_count": 49
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"df_pd[['age','children']] = df_pd[['age','children']].astype(float).astype(int)\r\n",
+					"df_pd[['bmi','bloodpressure','claim']] = df_pd[['bmi','bloodpressure','claim']].astype(float)\r\n",
+					"df_pd"
+				],
+				"execution_count": 50
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"df_pd.info()"
+				],
+				"execution_count": 51
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"df_pd.head(5)"
+				],
+				"execution_count": 52
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"mx_age=df_pd['age'].max()\r\n",
+					"mn_age=df_pd['age'].min()\r\n",
+					"print(mx_age, mn_age)"
+				],
+				"execution_count": 53
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"age_range = [18,25,41,57,60]\r\n",
+					"age_labels = ['Gen Z','Millennials', 'Gen X', 'Baby Boomers']\r\n",
+					"df_pd['age_group'] =  pd.cut(df_pd['age'], age_range,labels=age_labels)\r\n",
+					"# ageGroup = df_pd[['age_group', 'claim']].groupby('age_group').mean().sort_values(by=\"claim\", ascending=True)\r\n",
+					""
+				],
+				"execution_count": 54
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"mx_bmi=df_pd['bmi'].max()\r\n",
+					"mn_bmi=df_pd['bmi'].min()\r\n",
+					"print(mn_bmi, mx_bmi)"
+				],
+				"execution_count": 55
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"bmi_range = [15.5,18.5,24.9,29.9,60]\r\n",
+					"bmi_labels = ['Underweight','Healthy Weight', 'Overweight', 'Obese']\r\n",
+					"df_pd['bmi_group'] = pd.cut(df_pd['bmi'], bmi_range, labels=bmi_labels)"
+				],
+				"execution_count": 56
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"df_pd[['bmi_group','bmi']]"
+				],
+				"execution_count": 57
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"df_pd['bmi_group'].value_counts()"
+				],
+				"execution_count": 58
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"bloodpressure_range = [71,120,129,139,148]\r\n",
+					"bloodpressure_labels = ['Normal', 'Elevated', 'Hypertension Stage 1','Hypertension Stage 2']\r\n",
+					"df_pd['bloodpressure_group'] = pd.cut(df_pd['bloodpressure'], bloodpressure_range, labels = bloodpressure_labels)"
+				],
+				"execution_count": 59
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"df_pd  = df_pd[['gender','age','age_group', 'bmi','bmi_group', 'bloodpressure', 'bloodpressure_group','diabetic', 'children',\r\n",
+					"       'smoker', 'region', 'claim' ]]\r\n",
+					"\r\n",
+					"df_pd"
+				],
+				"execution_count": 60
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"### **Visualization**"
+				]
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"##### **Claims by Region**"
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"plt.figure(figsize = (12,8))\r\n",
+					"sns.set_palette('pastel')\r\n",
+					"plt.title(\"Claims by Region\" ,color = 'DarkBlue',fontsize=14)\r\n",
+					"df_pd['region'].value_counts().plot(kind='pie', autopct='%1.1f%%')\r\n",
+					"plt.show()\r\n",
+					"\r\n",
+					""
+				],
+				"execution_count": 61
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"##### Patients in the Southeast with the 33.2% and Northwest with 25.9% received the highest number of health insurance claims."
+				]
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"##### **Claims per Age Group**"
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"\r\n",
+					"plt.figure(figsize = (12,8))\r\n",
+					"sns.set_palette('pastel')\r\n",
+					"plt.title(\"Claims per Age Group\" ,color = 'DarkBlue',fontsize=14)\r\n",
+					"df_pd['age_group'].value_counts().plot(kind='pie', autopct='%1.1f%%')\r\n",
+					"plt.show()"
+				],
+				"execution_count": 62
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"##### Millennials are the 45.4% of the total and received the most health insurance claims."
+				]
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"##### **BMI Ranges**"
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"# plt.pie(df_pd['bmi_group'].value_counts(), autopct='%1.1f%%')\r\n",
+					"\r\n",
+					"\r\n",
+					"plt.figure(figsize = (12,8))\r\n",
+					"df_pd['bmi_group'].value_counts().plot(kind='pie', autopct='%1.1f%%')\r\n",
+					"plt.title('BMI Range',color = 'DarkBlue',fontsize=14)"
+				],
+				"execution_count": 63
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"plt.figure(figsize=(10,6))\r\n",
+					"plt.title(\"BMI and Claim Amount\",fontsize=14, color='DarkBlue')\r\n",
+					"plt.xlabel('BMI',fontsize=12,color='DarkBlue')\r\n",
+					"plt.ylabel('Claim',fontsize=12,color='DarkBlue')\r\n",
+					"sns.scatterplot(x=df_pd['bmi'], y=df_pd['claim'])"
+				],
+				"execution_count": 64
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"# Set the width and height of the figure\r\n",
+					"plt.figure(figsize=(10,6))\r\n",
+					"plt.title(\"BMI Claims\",fontsize=14, color='DarkBlue')\r\n",
+					"sns.barplot(x=df_pd.bmi_group, y=df_pd['claim'])\r\n",
+					"plt.xlabel('BMI Groups',fontsize=12,color='DarkBlue')\r\n",
+					"plt.ylabel('Claim Amounts',fontsize=12,color='DarkBlue')"
+				],
+				"execution_count": 65
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"##### The majority of patients receiving health insurance claims are obese with the 52.7%. The cost of the claims for patients obese  ranges broadly from less than 12,000 to above 60,000."
+				]
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"##### **Gender by Region**"
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"plt.figure(figsize = (10,6))\r\n",
+					"plt.title(\"Gender by Region\", fontsize=14, color='DarkBlue')\r\n",
+					"sns.countplot(x = 'gender', hue = 'region', data = df_pd)\r\n",
+					"plt.xlabel('Gender',fontsize=12,color='DarkBlue')\r\n",
+					"# plt.ylabel('Total',fontsize=12,color='DarkBlue')"
+				],
+				"execution_count": 66
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"##### In the Southeast region, females filed slightly more claims than males. There is a substantial disparity in the number of claims between the Southeast and Northeast regions."
+				]
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"#### **Correlations**"
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"plt.figure(figsize = (10,6))\r\n",
+					"\r\n",
+					"plt.subplot(1,2,1)\r\n",
+					"plt.title(\"Correlation between Generation and BMI\", color = 'DarkRed')\r\n",
+					"sns.countplot(x ='age_group', hue = 'bmi_group', data = df_pd)\r\n",
+					"plt.ylabel('Count',fontsize=12,color='DarkRed')\r\n",
+					"plt.xlabel('Age Group',fontsize=12,color='DarkRed')\r\n",
+					"\r\n",
+					"plt.subplot(1,2,2)\r\n",
+					"plt.title(\"Correlation between Blood Pressure and Generation\", color = 'DarkBlue')\r\n",
+					"sns.countplot(x = 'age_group', hue = 'bloodpressure_group', data = df_pd)\r\n",
+					"plt.ylabel('Count',fontsize=12,color='DarkBlue')\r\n",
+					"plt.xlabel('Age Group',fontsize=12,color='DarkBlue')\r\n",
+					"\r\n",
+					"# plt.xlabel('Count',fontsize=12,color='DarkRed')\r\n",
+					"# plt.ylabel('Age Group',fontsize=12,color='DarkRed')"
+				],
+				"execution_count": 67
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"According to USC Libraries, the following list of years are ascribed to generational age groups: Gen Z 1995 - 2010, Millennials 1977-1995, Gen X 1965-1976 and Baby Boomers 1946-1964.\r\n",
+					"\r\n",
+					"Heart.org lists the systolic mm Hg, (upper number) blood pressure ranges less than 120 as normal, 120-129 elevated, 130 -139 High Blood Pressure (Hypertension) Stage 1, 140 or higher High Blood Pressure (Hypertension) Stage 2, higher than 180 Hypertensive crisis. The data set did not include any patients that experienced a hypertensive crisis.\r\n",
+					"\r\n",
+					"There are significantly more obese patients that are millennials than any other age group. The majority of millennials have normal blood pressure ranges. However, millennials have more elevated blood pressure and hypertension stage 1 blood pressure ranges than any other age group."
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"plt.figure(figsize = (10,6))\r\n",
+					"plt.subplot(1,2,1)\r\n",
+					"sns.countplot(x = 'age_group', hue = 'gender', data = df_pd)\r\n",
+					"plt.ylabel('Gender Count',fontsize=12,color='DarkRed')\r\n",
+					"plt.xlabel('Age Group',fontsize=12,color='DarkRed')\r\n",
+					"\r\n",
+					"plt.subplot(1,2,2)\r\n",
+					"sns.countplot(x ='age_group', hue = 'diabetic', data = df_pd)\r\n",
+					"plt.ylabel('Diabetic Count',fontsize=12,color='DarkBlue')\r\n",
+					"plt.xlabel('Age Group',fontsize=12,color='DarkBlue')\r\n",
+					"\r\n",
+					""
+				],
+				"execution_count": 68
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"Millennial males and females received a higher proportion of claims than any other age group. While a significant number of claim recipients are diabetic, there is a very small variance between diabetic and non-diabetic across all age groups."
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"plt.figure(figsize = (10,5))\r\n",
+					"plt.subplot(1,2,1)\r\n",
+					"sns.countplot(x = 'age_group', hue = 'region', data = df_pd)\r\n",
+					"plt.ylabel('Region Count',fontsize=12,color='DarkRed')\r\n",
+					"plt.xlabel('Age Group',fontsize=12,color='DarkRed')\r\n",
+					"\r\n",
+					"plt.subplot(1,2,2)\r\n",
+					"sns.countplot( x = 'age_group', hue = 'smoker', data = df_pd)\r\n",
+					"plt.ylabel('Smoker Count',fontsize=12,color='DarkBlue')\r\n",
+					"plt.xlabel('Age Group',fontsize=12,color='DarkBlue')\r\n",
+					""
+				],
+				"execution_count": 69
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"Throughout the United States, millennials received the majority of health insurance claims. The majority of claim recipients were non-smokers."
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"# plt.subplot(#Total number of rows, total number of columns, plot number)\r\n",
+					"plt.figure(figsize = (10,5))\r\n",
+					"\r\n",
+					"# Add title \r\n",
+					"plt.title(\"Correlation of Generations and Children\", fontsize=15, color='DarkBlue')\r\n",
+					"\r\n",
+					"# Bar chart showing correlation between age groups and generations\r\n",
+					"sns.countplot( x = 'age_group', hue = 'children', data = df_pd)\r\n",
+					"\r\n",
+					"\r\n",
+					"plt.ylabel('Children Count',fontsize=12,color='DarkBlue')\r\n",
+					"plt.xlabel('Age Group',fontsize=12,color='DarkBlue')\r\n",
+					""
+				],
+				"execution_count": 70
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"Millenials are parents to the highest number of childern under the age of 18 years old."
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"plt.figure(figsize=(10,6))\r\n",
+					"\r\n",
+					"# Add title\r\n",
+					"plt.title(\" Claim Amount per Age Group\")\r\n",
+					"sns.barplot(x=df_pd.region, y=df_pd['claim'])\r\n",
+					"\r\n",
+					"plt.ylabel('Claim Amount',fontsize=12,color='DarkBlue')\r\n",
+					"plt.xlabel('Region',fontsize=12,color='DarkBlue')"
+				],
+				"execution_count": 74
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"The average claim amount is highest in the Northeast."
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"plt.figure(figsize=(10,6))\r\n",
+					"\r\n",
+					"# Add title\r\n",
+					"plt.title(\"Blood Pressure Claims per Region\",fontsize=15, color='DarkBlue')\r\n",
+					"\r\n",
+					"# Bar chart showing blood pressure claims by region\r\n",
+					"sns.barplot(x=df_pd.bloodpressure, y=df_pd['region'])\r\n",
+					"\r\n",
+					"plt.ylabel('Region',fontsize=12,color='DarkBlue')\r\n",
+					"plt.xlabel('BloodPressure',fontsize=12,color='DarkBlue')"
+				],
+				"execution_count": 76
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"Patients in the Southeast and Northeast have the highest blood pressure. However, blood pressure less than 120 is classified as normal."
+				]
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"**Problems**\r\n",
+					"Patients in the Southeast experience significantly higher claim rates compared to other regions. Most of these claims are from millennials. Obesity is a common factor among claim recipients. This is concerning because millennials are the primary parents of children under 18. If this trend persists, future generations may face obesity-related health issues and increased medical expenses.\r\n",
+					"\r\n",
+					"**Solutions**\r\n",
+					"The CDC recommends 40 to 50 hours of annual nutritional education to promote positive behavior change. However, U.S. students currently receive less than 8 hours of nutritional education per year. School administrators and teachers play a crucial role in shaping the future. Opportunities to teach healthy lifestyles exist across all grades, including integrating math with counting fruits and vegetables, establishing school gardens, and introducing appealing nutritious food options in cafeterias. These efforts can help children learn to eat for sustenance rather than indulgence.\r\n",
+					"\r\n",
+					"**Next Steps**\r\n",
+					"State and local government officials should collaborate with school administrators to ensure that schools have the necessary resources for teaching healthy eating habits. Teachers should involve their students when designing lessons focused on healthy lifestyles. Additionally, some activities and events can be structured to involve the entire family. These actions will set millennials and their children on a path toward better health outcomes."
+				]
+			}
+		]
+	}
+}

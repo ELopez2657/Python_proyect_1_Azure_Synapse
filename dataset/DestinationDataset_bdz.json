@@ -1,0 +1,19 @@
+{
+	"name": "DestinationDataset_bdz",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "project01erick-WorkspaceDefaultStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "new_data_link",
+				"fileSystem": "container02"
+			}
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

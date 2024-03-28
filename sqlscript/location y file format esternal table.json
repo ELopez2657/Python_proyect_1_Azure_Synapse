@@ -1,0 +1,17 @@
+{
+	"name": "location y file format esternal table",
+	"properties": {
+		"content": {
+			"query": "CREATE DATABASE sales\n    collate Latin1_General_100_BIN2_UTF8;\nGo;\n\nuse sales;\n\ncreate EXTERNAL data SOURCE salesdata_es with(\n    LOCATION = 'https://dls01project.dfs.core.windows.net/container01/files/'\n);\ngo;\n\ncreate EXTERNAL file FORMAT my_format\n    with (\n            FORMAT_TYPE = DELIMITEDTEXT\n    );\n    go;\n\n\ndrop EXTERNAL DATA SOURCE salesdata_es;\n\n\n\n\n\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "sales",
+				"poolName": "Built-in"
+			},
+			"resultLimit": -1
+		},
+		"type": "SqlQuery"
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"name": "conexions db_pizza",
+	"properties": {
+		"content": {
+			"query": "create database pizza_db;\nuse pizza_db;\n\n--External data source\ncreate EXTERNAL DATA SOURCE EDS_pizza\nwith(\n    Location ='https://dls01project.dfs.core.windows.net/project01erick/',\n    CREDENTIAL= SynapseUserIdentity04,       \n);\n\n--drop EXTERNAL DATA SOURCE EDS_pizza;\n\n--External format\ncreate EXTERNAL FILE FORMAT EFF_pizza \nwith(\n    FORMAT_TYPE = DELIMITEDTEXT\n);\n\n--Schema que es dominada por el Owen of data base\ncreate SCHEMA DLW AUTHORIZATION dbo\ngo;\n\n-- Cambiar formato de datos \nALTER DATABASE pizza_db collate Latin1_General_100_BIN2_UTF8;\n\n-----------------------------------------\n--Security\ncreate master key ENCRYPTION by PASSWORD = '0979006421contraseña'\n\nCREATE DATABASE SCOPED CREDENTIAL SynapseUserIdentity01 with IDENTITY = 'User Identity'",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "pizza_db",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

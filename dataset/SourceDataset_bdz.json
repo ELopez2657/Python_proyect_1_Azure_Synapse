@@ -1,0 +1,20 @@
+{
+	"name": "SourceDataset_bdz",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "HttpServer1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation"
+			},
+			"compression": {
+				"type": "GZip"
+			}
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

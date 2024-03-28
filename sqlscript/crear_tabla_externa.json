@@ -1,0 +1,17 @@
+{
+	"name": "crear_tabla_externa",
+	"properties": {
+		"content": {
+			"query": "use pizza_db;\n\ncreate EXTERNAL data SOURCE prueba_03 with(\n    LOCATION = 'https://dls01project.dfs.core.windows.net/container02/'  --carpeta principal donde se ubicara\n); go;\n\n\ncreate EXTERNAL file FORMAT format03\n    with (\n            FORMAT_TYPE = DELIMITEDTEXT\n            --FORMAT_OPTIONS (\n        --FIELD_TERMINATOR = ';')   NO hace falta especificar si es ','\n    ); go;\n\n\n--drop EXTERNAL DATA SOURCE salesdata_es;\n--drop EXTERNAL FILE FORMAT format03\n\n\n-----------------------------------------\n-----------------------------------------\n\n\n-----Se puede expecificar Schemas .dbo .sto .dlw ------\nCREATE EXTERNAL TABLE prueba05\n\tWITH(\n\t\tLOCATION = '/final_final02/',  --nombre de la carpeta que se crea dentro de la principal\n\t\tDATA_SOURCE = prueba_03,\n\t\tFILE_FORMAT = format03\n\t)\nas \nselect *\nfrom \nOPENROWSET(BULK 'abfss://container01@dls01project.dfs.core.windows.net/files/CityList.csv', --de donde se saca la inofrmacion\n                FORMAT = 'csv',\n\t\t\t\tPARSER_VERSION = '2.0',\n\t\t\t\tHEADER_ROW = TRUE\n\t\t\t\t) as nueva_tabla\n; \n\n--DROP EXTERNAL TABLE prueba04\n\nselect name,lon,lat from  prueba05;",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "pizza_db",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
