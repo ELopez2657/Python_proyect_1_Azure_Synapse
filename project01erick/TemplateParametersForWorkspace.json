@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "project01erick"
+		},
+		"project01erick-WorkspaceDefaultSqlServer_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:project01erick.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
+		},
+		"HttpServer1_properties_typeProperties_url": {
+			"value": "https://www.kaggle.com/datasets/kanchana1990/real-estate-data-uae/download?datasetVersionNumber=1"
+		},
+		"HttpServer2_properties_typeProperties_url": {
+			"value": "https://www.kaggle.com/datasets/sriharshaeedala/financial-fraud-detection-dataset/download?datasetVersionNumber=1"
+		},
+		"city_safety_seattle_sasUri": {
+			"value": ""
+		},
+		"intento 2_properties_typeProperties_url": {
+			"value": "https://www.kaggle.com/datasets/kanchana1990/real-estate-data-uae/download?datasetVersionNumber=1"
+		},
+		"lego_properties_typeProperties_url": {
+			"value": "https://www.kaggle.com/datasets/sriharshaeedala/financial-fraud-detection-dataset/"
+		},
+		"project01erick-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://dls01project.dfs.core.windows.net"
+		},
+		"prueba_final_properties_typeProperties_url": {
+			"value": "https://www.kaggle.com/datasets/sriharshaeedala/financial-fraud-detection-dataset"
+		},
+		"sample-diabetes_sasUri": {
+			"value": ""
+		}
+	}
+}
