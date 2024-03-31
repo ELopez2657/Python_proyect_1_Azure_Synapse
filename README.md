@@ -1,1 +1,7 @@
 # Python_proyect_1_Azure_Synapse
+
+Problems Patients in the Southeast experience significantly higher claim rates compared to other regions. Most of these claims are from millennials. Obesity is a common factor among claim recipients. This is concerning because millennials are the primary parents of children under 18. If this trend persists, future generations may face obesity-related health issues and increased medical expenses.
+
+Solutions The CDC recommends 40 to 50 hours of annual nutritional education to promote positive behavior change. However, U.S. students currently receive less than 8 hours of nutritional education per year. School administrators and teachers play a crucial role in shaping the future. Opportunities to teach healthy lifestyles exist across all grades, including integrating math with counting fruits and vegetables, establishing school gardens, and introducing appealing nutritious food options in cafeterias. These efforts can help children learn to eat for sustenance rather than indulgence.
+
+Next Steps State and local government officials should collaborate with school administrators to ensure that schools have the necessary resources for teaching healthy eating habits. Teachers should involve their students when designing lessons focused on healthy lifestyles. Additionally, some activities and events can be structured to involve the entire family. These actions will set millennials and their children on a path toward better health outcomes.
